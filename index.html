@@ -84,6 +84,13 @@ p, li{
 ul{
     margin-left:20px;
 }
+
+/* ✅ Gyaran hotuna */
+.container img{
+    width:100%;
+    margin-top:10px;
+    border-radius:10px;
+}
 </style>
 </head>
 
@@ -135,18 +142,57 @@ My interests include personal growth, learning new skills, technology, self-impr
 <li>Personal Development</li>
 </ul>
 
-<h2>My Photos</h2>
+<h2 onclick="togglePhotos()" style="cursor:pointer;">
+📁 My Photos (Click to Open)
+</h2>
+
+<div id="photos" style="display:none; margin-top:10px;">
 
 <a href="https://ibb.co/wrhQJFgY" target="_blank">
 <img src="https://i.ibb.co/qFYg03jx/IMG-20260410-WA0019.jpg" width="100%">
 </a>
-<a href="https://ibb.co/60jw7sfd"><img src="https://i.ibb.co/SwFy4v9L/IMG-20260324-065850-891.jpg" alt="IMG-20260324-065850-891" border="0"></a>  
-<a href="https://ibb.co/KjDLvQ2P"><img src="https://i.ibb.co/XZD3Rd7Q/Snapchat-624048860.jpg" alt="Snapchat-624048860" border="0"></a>  
-<a href="https://ibb.co/rR7QLP4f"><img src="https://i.ibb.co/fz1XKR4G/Snapchat-1751147972.jpg" alt="Snapchat-1751147972" border="0"></a>  
-<a href="https://ibb.co/jp9M0jp"><img src="https://i.ibb.co/hqxWQTq/IMG-20250331-100110-768.jpg" alt="IMG-20250331-100110-768" border="0"></a>  
-<a href="https://ibb.co/xtYYjWf6"><img src="https://i.ibb.co/Q3kkNLCM/Snapchat-1592267597.jpg" alt="Snapchat-1592267597" border="0"></a>  
-<a href="https://ibb.co/nqFMcM5n"><img src="https://i.ibb.co/spZ9w9M6/IMG-20230426-201822-423.jpg" alt="IMG-20230426-201822-423" border="0"></a>  
-<a href="https://ibb.co/DPXTwxXT"><img src="https://i.ibb.co/vC5RL75R/IMG-20250507-093121-904.jpg" alt="IMG-20250507-093121-904" border="0"></a>  
+
+<a href="https://ibb.co/60jw7sfd" target="_blank">
+<img src="https://i.ibb.co/SwFy4v9L/IMG-20260324-065850-891.jpg" width="100%">
+</a>
+
+<a href="https://ibb.co/KjDLvQ2P" target="_blank">
+<img src="https://i.ibb.co/XZD3Rd7Q/Snapchat-624048860.jpg" width="100%">
+</a>
+
+<a href="https://ibb.co/rR7QLP4f" target="_blank">
+<img src="https://i.ibb.co/fz1XKR4G/Snapchat-1751147972.jpg" width="100%">
+</a>
+
+<a href="https://ibb.co/jp9M0jp" target="_blank">
+<img src="https://i.ibb.co/hqxWQTq/IMG-20250331-100110-768.jpg" width="100%">
+</a>
+
+<a href="https://ibb.co/xtYYjWf6" target="_blank">
+<img src="https://i.ibb.co/Q3kkNLCM/Snapchat-1592267597.jpg" width="100%">
+</a>
+
+<a href="https://ibb.co/nqFMcM5n" target="_blank">
+<img src="https://i.ibb.co/spZ9w9M6/IMG-20230426-201822-423.jpg" width="100%">
+</a>
+
+<a href="https://ibb.co/DPXTwxXT" target="_blank">
+<img src="https://i.ibb.co/vC5RL75R/IMG-20250507-093121-904.jpg" width="100%">
+</a>
+
+
+</div>
+
+<script>
+function togglePhotos(){
+    var x = document.getElementById("photos");
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
 
 <h2>Contact Me</h2>
 <p>
